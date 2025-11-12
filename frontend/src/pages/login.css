@@ -1,0 +1,104 @@
+.login-page {
+  position: relative;
+  min-height: 100vh;
+  background: #0c0d11;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.orb {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 999px;
+  filter: blur(2px);
+}
+.orb--pink {
+  top: -40px;
+  left: -10px;
+  background: radial-gradient(circle at 35% 35%, #ffb5ff, #b057f6 40%, #7c3aed 70%);
+  box-shadow: 0 40px 120px rgba(124, 58, 237, 0.55);
+}
+.orb--gray {
+  top: 48px;
+  right: 28px;
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle at 35% 35%, #cfcfcf, #6b7280 60%, #111827 80%);
+  box-shadow: 0 30px 90px rgba(0,0,0,0.45);
+}
+
+.login-card { width: min(460px, 92vw); padding: 24px; display: flex; flex-direction: column; gap: 12px; }
+
+.title {
+  margin: 0 0 8px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.social-btn {
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.03);
+  color: rgba(255,255,255,0.9);
+  border: 1px solid rgba(255,255,255,0.14);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+}
+.social-btn .icon {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  font-weight: 700;
+}
+
+.divider {
+  text-align: center;
+  color: rgba(255,255,255,0.75);
+  margin: 8px 0 2px;
+}
+
+.field { display: block; }
+.input {
+  width: 100%;
+  height: 48px;
+  border-radius: 14px;
+  padding: 0 16px;
+  color: #fff;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.14);
+}
+.input::placeholder { color: rgba(255,255,255,0.7); }
+
+.submit-btn {
+  height: 52px;
+  border: none;
+  border-radius: 14px;
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(90deg, #a855f7, #f472b6);
+  box-shadow: 0 14px 40px rgba(168,85,247,0.35);
+}
+
+.meta {
+  text-align: center;
+  color: rgba(255,255,255,0.85);
+  margin-top: 8px;
+}
+.link {
+  color: #ffffff;
+  font-weight: 700;
+  margin-left: 8px;
+  text-decoration: none;
+}
+.link:hover { text-decoration: underline; }
+
+
